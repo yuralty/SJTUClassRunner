@@ -1,0 +1,54 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ClassRunner	classrunner.py	/^class ClassRunner(object):$/;"	c
+GETpage	ccrawl.py	/^def GETpage(url, opener):$/;"	f
+POSTpage	ccrawl.py	/^def POSTpage(url, opener, data):$/;"	f
+__getPage	classrunner.py	/^    def __getPage(self, url):$/;"	m	class:ClassRunner	file:
+__goThirdRoundSpelty	classrunner.py	/^    def __goThirdRoundSpelty(self):$/;"	m	class:ClassRunner	file:
+__init__	classrunner.py	/^    def __init__(self):$/;"	m	class:ClassRunner
+__login	classrunner.py	/^    def __login(self):$/;"	m	class:ClassRunner	file:
+__postPage	classrunner.py	/^    def __postPage(self, url, data):$/;"	m	class:ClassRunner	file:
+__refreshState	classrunner.py	/^    def __refreshState(self, page):$/;"	m	class:ClassRunner	file:
+__trySelect	classrunner.py	/^    def __trySelect(self, page, department, grade, classID):$/;"	m	class:ClassRunner	file:
+button1	ccrawl.py	/^button1 = '登录'$/;"	v
+classurl	ccrawl.py	/^classurl = 'http:\/\/electsys.sjtu.edu.cn\/edu\/student\/elect\/outSpeltyEP.aspx'$/;"	v
+cookiejar	ccrawl.py	/^cookiejar = cookielib.LWPCookieJar('aaa.txt')$/;"	v
+count	ccrawl.py	/^count = 1$/;"	v
+data	ccrawl.py	/^    data = urllib.urlencode(values)$/;"	v
+data	ccrawl.py	/^data = urllib.urlencode(values)$/;"	v
+header	ccrawl.py	/^header = [ ('Accept', 'text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8'),$/;"	v
+homeurl	ccrawl.py	/^homeurl = 'http:\/\/electsys.sjtu.edu.cn\/edu\/'$/;"	v
+loginurl	ccrawl.py	/^loginurl = 'http:\/\/electsys.sjtu.edu.cn\/edu\/index.aspx'$/;"	v
+myradiogroup	ccrawl.py	/^myradiogroup = '351505'$/;"	v
+page	ccrawl.py	/^    page = GETpage(mainurl, urlOpener)$/;"	v
+page	ccrawl.py	/^    page = POSTpage(classurl, urlOpener, data)$/;"	v
+page	ccrawl.py	/^    page = POSTpage(selecturl,urlOpener, data)$/;"	v
+page	ccrawl.py	/^    page = POSTpage(socialurl, urlOpener, data)$/;"	v
+page	ccrawl.py	/^    page = POSTpage(speltyurl, urlOpener, data)$/;"	v
+page	ccrawl.py	/^page = GETpage(homeurl, urlOpener)$/;"	v
+page	ccrawl.py	/^page = GETpage(mainurl, urlOpener)$/;"	v
+page	ccrawl.py	/^page = POSTpage(classurl, urlOpener, data)$/;"	v
+page	ccrawl.py	/^page = POSTpage(loginurl, urlOpener, data)$/;"	v
+page	ccrawl.py	/^page = POSTpage(saveurl, urlOpener, data)$/;"	v
+page	ccrawl.py	/^page = POSTpage(selecturl,urlOpener, data)$/;"	v
+page	ccrawl.py	/^page = POSTpage(socialurl, urlOpener, data)$/;"	v
+page	ccrawl.py	/^page = POSTpage(speltyurl, urlOpener, data)$/;"	v
+psword	ccrawl.py	/^psword = 'tyliu1013'$/;"	v
+rbtnlst	ccrawl.py	/^rbtnlst = '1'$/;"	v
+refreshstates	ccrawl.py	/^def refreshstates(page):$/;"	f
+retry	ccrawl.py	/^def retry():$/;"	f
+socialurl	ccrawl.py	/^socialurl = 'http:\/\/electsys.sjtu.edu.cn\/edu\/student\/elect\/outSpeltyEP.aspx'$/;"	v
+speltyurl	ccrawl.py	/^speltyurl = 'http:\/\/electsys.sjtu.edu.cn\/edu\/student\/elect\/speltyRequiredCourse.aspx'$/;"	v
+urlOpener	ccrawl.py	/^urlOpener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookiejar))$/;"	v
+username	ccrawl.py	/^username = '5110309744'$/;"	v
+values	ccrawl.py	/^    values = { '__VIEWSTATE': viewstate[0], '__EVENTVALIDATION': eventvalidation[0],'OutSpeltyEP1$dpYx': '09000', 'OutSpeltyEP1$dpNj': '2011', 'OutSpeltyEP1$btnQuery': '查 询' }$/;"	v
+values	ccrawl.py	/^    values = {'__VIEWSTATE': viewstate[0], '__EVENTVALIDATION': eventvalidation[0], 'SpeltyRequiredCourse1$btnXuanXk': '任选课'}$/;"	v
+values	ccrawl.py	/^    values = {'__VIEWSTATE': viewstate[0], '__EVENTVALIDATION':$/;"	v
+values	ccrawl.py	/^values = { '__VIEWSTATE': viewstate[0], '__EVENTVALIDATION': eventvalidation[0],'OutSpeltyEP1$dpYx': '09000', 'OutSpeltyEP1$dpNj': '2011', 'OutSpeltyEP1$btnQuery': '查 询' }$/;"	v
+values	ccrawl.py	/^values = {'__VIEWSTATE': viewstate[0], '__EVENTVALIDATION': eventvalidation[0], 'SpeltyRequiredCourse1$btnXuanXk': '任选课'}$/;"	v
+values	ccrawl.py	/^values = {'__VIEWSTATE': viewstate[0], '__EVENTVALIDATION': eventvalidation[0], 'txtUserName': username, 'txtPwd': psword, 'rbtnLst': rbtnlst,$/;"	v
+values	ccrawl.py	/^values = {'__VIEWSTATE': viewstate[0], '__EVENTVALIDATION':$/;"	v
