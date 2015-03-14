@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 class ClassRunner(object):
     """docstring for ClassRunner"""
-    def __init__(self):
+    def __init__(self, username, psword):
         self.cookiejar = cookielib.LWPCookieJar('aaa.txt')
         self.opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(self.cookiejar))
         self.header = [ ('User-Agent', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36'), ]
@@ -15,8 +15,8 @@ class ClassRunner(object):
         self.eventvalidation = 0
         
         # User infomation
-        self.username = '5110309810'
-        self.psword = '03110211'
+        self.username = username
+        self.psword = psword
 
 
         # URLs       
@@ -131,9 +131,9 @@ class Request(object):
         self.department, self.grade, self.classID = department, grade, classID
         
 
-def threadRunner(request):
+def threadRunner(request, uname, psw):
     """docstring for  thread"""
-    cr = ClassRunner()
+    cr = ClassRunner(uname, psw)
     department = request.department
     grade = request.grade
     classID = request.classID
@@ -142,12 +142,15 @@ def threadRunner(request):
 
 
 if __name__ == '__main__':
+    uname = raw_input('Your Student ID: ')
+    psw = raw_input('Your password: ')
     cl = []
     cl.append(Request('09000', '2011', 'PL015'))
 
     threadlist = []
     for request in cl:
-        threadlist.append(threading.Thread(target=threadRunner, args=(request,)))
+        threadlist.append(threading.Thread(target=threadRunner, args=(request,
+            uname, psw,)))
     for t in threadlist:
         t.start()
         
